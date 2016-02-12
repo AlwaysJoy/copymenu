@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/rg_index_tab"
+        android:background="#e2e2e2"
+        android:visibility="visible"/>
+
+    <RadioGroup
+        android:id="@+id/rg_index_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_c_nor"
+            android:button="@null"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_create_nor"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/rb_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_p_nor"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/rb_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_me_nor"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_c_sel"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/iv_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_create_sel"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_p_sel"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/tab_bar_me_sel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/v_line_horizontal"
+        android:layout_margin="20dp"/>
+</RelativeLayout>
